@@ -66,6 +66,10 @@
         background-color: #CCFFFF;
       }
 
+      .btn {
+        background-color: inherit;
+      }
+
       [aria-expanded="false"]  > .fa-angle-double-up {
         display: none;
       }
@@ -85,14 +89,9 @@
     <h1>Forum 2018 Schedule</h1>
 
     <!-- TODO:
-         * Preconference room assignments
          * Integrate descriptions
          * "It would be made of magic if clicking on a room got you the "room" view so you could see what was going on in that room all day." (and then make sure you can go back to view all)
          * Are there discussion facilitators who should be listed?
-         * Missing presenter metadata
-         * Descriptions for: playful learning; metalab;
-         * Collate problems with sessions and send to programming committee
-         * Fix aria-controls
     -->
 
     <h2>
@@ -143,7 +142,7 @@
           <div class="col-xs-10 col-sm-9">
             <p class="lead">
               Cybersecurity &amp; Privacy in Libraries and for Librarians
-              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#precon2" aria-expanded="false" aria-controls="collapseExample">
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#precon2" aria-expanded="false" aria-controls="precon2">
                 <i class="fas fa-angle-double-down"></i>
                 <i class="fas fa-angle-double-up"></i>
               </a>
@@ -170,7 +169,7 @@
           <div class="col-xs-10 col-sm-9">
             <p class="lead">
               Through the Looking Glass: Overcoming Self-Centered Design
-              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#precon3" aria-expanded="false" aria-controls="collapseExample">
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#precon3" aria-expanded="false" aria-controls="precon3">
                 <i class="fas fa-angle-double-down"></i>
                 <i class="fas fa-angle-double-up"></i>
               </a>
@@ -233,7 +232,13 @@
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
           </div>
           <div class="schedule-keynote col-xs-10 col-sm-9">
-            <p class="lead">Mozilla's Gigabit City Grant &mdash; Opening Access to Virtual Worlds</p>
+            <p class="lead">
+              Mozilla's Gigabit City Grant &mdash; Opening Access to Virtual Worlds
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block1-gigabit" aria-expanded="false" aria-controls="nov9-block1-gigabit">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Margaret Alexander</strong>, Eugene Public Library
@@ -255,7 +260,13 @@
             <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
           </div>
           <div class="schedule-lecture col-xs-10 col-sm-9">
-            <p class="lead">Accessibility for All: Screen Readers</p>
+            <p class="lead">
+              Accessibility for All: Screen Readers
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block1-accessibility" aria-expanded="false" aria-controls="nov9-block1-accessibility">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Kelsey Flynn</strong>, White Oak Public Library District and Joliet Public Library
@@ -280,7 +291,13 @@
                 11:00 &ndash; 11:20
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Engaging the campus community in the deaccessioning process with an innovative discovery interface</p>
+                <p class="lead">
+                  Engaging the campus community in the deaccessioning process with an innovative discovery interface
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block1-deaccessioning" aria-expanded="false" aria-controls="nov9-block1-deaccessioning">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Brian Rennick</strong>, Brigham Young University
@@ -296,7 +313,13 @@
                 11:20 &ndash; 11:40
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">stackR: An Open-Source Tool for Collections Analysis</p>
+                <p class="lead">
+                  stackR: An Open-Source Tool for Collections Analysis
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block1-stackR" aria-expanded="false" aria-controls="nov9-block1-stackR">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>James L. Adams</strong>, Dartmouth College
@@ -328,7 +351,13 @@
                 11:00 &ndash; 11:20
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Gender Equity in Library Technology: How Do We Get There?</p>
+                <p class="lead">
+                  Gender Equity in Library Technology: How Do We Get There?
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block1-equity" aria-expanded="false" aria-controls="nov9-block1-equity">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Melissa Prescott</strong>, St. Cloud State University
@@ -350,7 +379,13 @@
                 11:20 &ndash; 11:40
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Technological Microaggressions: How to Notice Them, How to Undo Them</p>
+                <p class="lead">
+                  Technological Microaggressions: How to Notice Them, How to Undo Them
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block1-microaggressions" aria-expanded="false" aria-controls="nov9-block1-microaggressions">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Ray Lockman</strong>, Hennepin County Library
@@ -383,7 +418,13 @@
             <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson1 col-xs-10 col-sm-9">
-            <p class="lead">Building a More Inclusive LMS Environment</p>
+            <p class="lead">
+              Building a More Inclusive LMS Environment
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block1-lms" aria-expanded="false" aria-controls="nov9-block1-lms">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Yi Ding</strong>, Cal State University Northridge
@@ -402,7 +443,13 @@
             <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson2 col-xs-10 col-sm-9">
-            <p class="lead">Sparking Into Online Creativity</p>
+            <p class="lead">
+              Sparking Into Online Creativity
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block1-creativity" aria-expanded="false" aria-controls="nov9-block1-creativity">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Wesley Smith</strong>, University of Tennessee at Chattanooga Library
@@ -426,7 +473,13 @@
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
           </div>
           <div class="schedule-keynote col-xs-10 col-sm-9">
-            <p class="lead">We're On The Air! Library Training in Podcast Format</p>
+            <p class="lead">
+              We're On The Air! Library Training in Podcast Format
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block2-podcast" aria-expanded="false" aria-controls="nov9-block2-podcast">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Mary Wilkins-Jordan</strong>, Central Minnesota Libraries Exchange
@@ -448,7 +501,13 @@
             <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
           </div>
           <div class="schedule-lecture col-xs-10 col-sm-9">
-            <p class="lead">Using Design Thinking – Do we really want a makerspace?</p>
+            <p class="lead">
+              Using Design Thinking – Do we really want a makerspace?
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block2-makerspace" aria-expanded="false" aria-controls="nov9-block2-makerspace">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Anne Shelley</strong>, Illinois State University, Milner Library
@@ -484,7 +543,13 @@
                 1:20 &ndash; 1:40
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Towards an Ethics of Data Visualization</p>
+                <p class="lead">
+                  Towards an Ethics of Data Visualization
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block2-visualization" aria-expanded="false" aria-controls="nov9-block2-visualization">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Megan Ozeran</strong>, University of Illinois
@@ -516,7 +581,13 @@
                 1:00 &ndash; 1:20
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Building the Foundation for Women in Library IT Leadership</p>
+                <p class="lead">
+                  Building the Foundation for Women in Library IT Leadership
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block2-leadership" aria-expanded="false" aria-controls="nov9-block2-leadership">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Melissa Cherry</strong>, Miami University
@@ -535,7 +606,13 @@
                 1:20 &ndash; 1:40
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Who put ME in charge??</p>
+                <p class="lead">
+                  Who put ME in charge??
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block2-me" aria-expanded="false" aria-controls="nov9-block2-me">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Emily Mitchell</strong>, SUNY Oswego
@@ -565,7 +642,13 @@
             <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson1 col-xs-10 col-sm-9">
-            <p class="lead">Playful Learning Session 1</p>
+            <p class="lead">
+              Playful Learning Session 1
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block2-playful" aria-expanded="false" aria-controls="nov9-block2-playful">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <i>(continues in Block 3)</i>
             <div class="collapse" id="nov9-block2-playful">
               <div class="well">
@@ -579,7 +662,13 @@
             <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson2 col-xs-10 col-sm-9">
-            <p class="lead">MetaLab &ndash; Library Kitchen</p>
+            <p class="lead">
+              MetaLab &ndash; Library Kitchen
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block2-metalab" aria-expanded="false" aria-controls="nov9-block2-metalab">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <i>(continues in Block 3)</i>
           </div>
           <div class="collapse" id="nov9-block2-metalab">
@@ -596,7 +685,13 @@
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
           </div>
           <div class="schedule-keynote col-xs-10 col-sm-9">
-            <p class="lead">Crafting community: Town and gown connecting in makerspace</p>
+            <p class="lead">
+              Crafting community: Town and gown connecting in makerspace
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block3-makerspace" aria-expanded="false" aria-controls="nov9-block3-makerspace">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Tammera Race</strong>, Jane Bancroft Cook Library, New College of Florida
@@ -618,7 +713,13 @@
             <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
           </div>
           <div class="schedule-lecture col-xs-10 col-sm-9">
-            <p class="lead">Accessibility Awareness: Beyond the Basics</p>
+            <p class="lead">
+              Accessibility Awareness: Beyond the Basics
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block3-accessibility" aria-expanded="false" aria-controls="nov9-block3-accessibility">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Rebecca Lynn Cremona</strong>, Harvard Library Innovation Lab
@@ -642,7 +743,13 @@
                 2:10 &ndash; 2:30
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Practical DevOps Tools for Small Institutions and Solo Developers</p>
+                <p class="lead">
+                  Practical DevOps Tools for Small Institutions and Solo Developers
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block3-devops" aria-expanded="false" aria-controls="nov9-block3-devops">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Charles Ed Hill</strong>, Westfield State University
@@ -658,7 +765,13 @@
                 2:30 &ndash; 2:50
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Talk To the Phone (Because the Human Is Overwhelmed)</p>
+                <p class="lead">
+                  Talk To the Phone (Because the Human Is Overwhelmed)
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block3-phone" aria-expanded="false" aria-controls="nov9-block3-phone">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Thomas Dowling</strong>, ZSR Library, Wake Forest University
@@ -693,7 +806,13 @@
                 2:10 &ndash; 2:50
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Unlocking Awesome: Libraries, deliberate practice, and instructional technologies</p>
+                <p class="lead">
+                  Unlocking Awesome: Libraries, deliberate practice, and instructional technologies
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block3-awesome" aria-expanded="false" aria-controls="nov9-block3-awesome">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Topher Lawton</strong>, Georgetown University
@@ -720,7 +839,13 @@
             <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson1 col-xs-10 col-sm-9">
-            <p class="lead">Playful Learning Session 1</p>
+            <p class="lead">
+              Playful Learning Session 1
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block3-playful" aria-expanded="false" aria-controls="nov9-block3-playful">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <i>(continued from Block 2)</i>
           </div>
           <div class="collapse" id="nov9-block3-playful">
@@ -734,7 +859,13 @@
             <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson2 col-xs-10 col-sm-9">
-            <p class="lead">MetaLab &ndash; Library Kitchen</p>
+            <p class="lead">
+              MetaLab &ndash; Library Kitchen
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block3-metalab" aria-expanded="false" aria-controls="nov9-block3-metalab">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <i>(continued from Block 2)</i>
             <div class="collapse" id="nov9-block3-metalab">
               <div class="well">
@@ -753,7 +884,13 @@
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
           </div>
           <div class="schedule-keynote col-xs-10 col-sm-9">
-            <p class="lead">The Price is Right- promoting and giving away free textbooks</p>
+            <p class="lead">
+              The Price is Right- promoting and giving away free textbooks
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block4-free" aria-expanded="false" aria-controls="nov9-block4-free">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Roy Degler</strong>, Oklahoma State Univ. Library
@@ -772,7 +909,18 @@
             <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
           </div>
           <div class="schedule-lecture col-xs-10 col-sm-9">
-            <p class="lead">Building a Better Library for Online Learners Through Cross Departmental Usability Assessment</p>
+            <p class="lead">
+              Building a Better Library for Online Learners Through Cross Departmental Usability Assessment
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block4-usability" aria-expanded="false" aria-controls="nov9-block4-usability">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
+            <ul class="list-unstyled">
+              <li>
+                <strong>Terry Brandsma</strong>, University of North Carolina at Greensboro
+              </li>
+            </ul>
             <div class="collapse" id="nov9-block4-usability">
               <div class="well">
                 Online learning is growing rapidly in higher education, which means that it’s important for information technology librarians (across many departments) to appropriately assess their virtual resources.  Public service, technical service, and IT librarians teamed up to craft and implement a usability plan to examine library virtual resources through the lens of online students and instructors; these librarians performed short usability tests examining how patrons discover subject based resources along with conducting a preliminary survey to better understand user demographics.  This program will cover our strategies for designing assessments across library departments, including our methodology, findings and implementation of results.
@@ -791,13 +939,19 @@
                 3:30 &ndash; 4:00
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Virtual Reality in the Academic Library: what students want</p>
+                <p class="lead">
+                  Virtual Reality in the Academic Library: what students want
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block4-vr" aria-expanded="false" aria-controls="nov9-block4-vr">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
-                    <strong>Megan Frost</strong>, Brigham Young Univeristy
+                    <strong>Megan Frost</strong>, Brigham Young University
                   </li>
                   <li>
-                    <strong>Sarah Cheng</strong>, Brigham Young Univeristy
+                    <strong>Sarah Cheng</strong>, Brigham Young University
                   </li>
                 </ul>
                 <div class="collapse" id="nov9-block4-vr">
@@ -810,7 +964,13 @@
                 4:00 &ndash; 4:30
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Video 360, Augmented Reality and Gaming and Gamification in the Library</p>
+                <p class="lead">
+                  Video 360, Augmented Reality and Gaming and Gamification in the Library
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block4-augmented" aria-expanded="false" aria-controls="nov9-block4-augmented">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Plamen Miltenoff</strong>, St. Cloud State University
@@ -844,7 +1004,13 @@
                 3:30 &ndash; 4:00
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Neutrality and Digital Architecture</p>
+                <p class="lead">
+                  Neutrality and Digital Architecture
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block4-neutrality" aria-expanded="false" aria-controls="nov9-block4-neutrality">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>TJ Lamanna</strong>, Library Freedom Project
@@ -860,7 +1026,13 @@
                 4:00 &ndash; 4:30
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Imitating Google, or Invading Privacy?</p>
+                <p class="lead">
+                  Imitating Google, or Invading Privacy?
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block4-privacy" aria-expanded="false" aria-controls="nov9-block4-privacy">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Jenica Rogers</strong>, SUNY Potsdam
@@ -889,7 +1061,13 @@
             <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson1 col-xs-10 col-sm-9">
-            <p class="lead">Playful Learning Session 2</p>
+            <p class="lead">
+              Playful Learning Session 2
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block4-playful" aria-expanded="false" aria-controls="nov9-block4-playful">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <i>(continues in Block 5)</i>
             <div class="collapse" id="nov9-block4-playful">
               <div class="well">
@@ -903,7 +1081,13 @@
             <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson2 col-xs-10 col-sm-9">
-            <p class="lead">Inclusivity Through Documentation: Using Gestalt Principles and Plain Language to Create Effective Documents</p>
+            <p class="lead">
+              Inclusivity Through Documentation: Using Gestalt Principles and Plain Language to Create Effective Documents
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block4-documentation" aria-expanded="false" aria-controls="nov9-block4-documentation">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Jennifer Turner</strong>, Minnesota State University, Mankato
@@ -929,7 +1113,13 @@
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
           </div>
           <div class="schedule-keynote col-xs-10 col-sm-9">
-            <p class="lead">How to Get Stakeholder Buy in for Implementing Emerging Technologies in Your Library</p>
+            <p class="lead">
+              How to Get Stakeholder Buy in for Implementing Emerging Technologies in Your Library
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block5-stakeholders" aria-expanded="false" aria-controls="nov9-block5-stakeholders">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Ida A. Joiner</strong>, Universal Academy
@@ -948,7 +1138,13 @@
             <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
           </div>
           <div class="schedule-lecture col-xs-10 col-sm-9">
-            <p class="lead">Demo, deploy, or die: maintaining and sustaining experiments that make it to production</p>
+            <p class="lead">
+              Demo, deploy, or die: maintaining and sustaining experiments that make it to production
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block5-demo" aria-expanded="false" aria-controls="nov9-block5-demo">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Ben Steinberg</strong>, Harvard Law School
@@ -975,7 +1171,13 @@
                 4:40 &ndash; 5:10
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Virtual Reality (VR) and Augmented Reality (AR) for Library Orientation: A Scalable Approach to Implementing VR/AR/MR in Education</p>
+                <p class="lead">
+                  Virtual Reality (VR) and Augmented Reality (AR) for Library Orientation: A Scalable Approach to Implementing VR/AR/MR in Education
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block5-vr" aria-expanded="false" aria-controls="nov9-block5-vr">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Plamen Miltenoff</strong>, St. Cloud State University
@@ -1010,7 +1212,13 @@
                 4:40 &ndash; 5:10
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Developing Communication Plans to Support Technology Changes: A Hands-On Workshop</p>
+                <p class="lead">
+                  Developing Communication Plans to Support Technology Changes: A Hands-On Workshop
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block5-communication" aria-expanded="false" aria-controls="nov9-block5-communication">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Jody Condit Fagan</strong>, James Madison University
@@ -1040,7 +1248,13 @@
             <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson1 col-xs-10 col-sm-9">
-            <p class="lead">Playful Learning Session 2</p>
+            <p class="lead">
+              Playful Learning Session 2
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block5-playful" aria-expanded="false" aria-controls="nov9-block5-playful">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <i>(continued from Block 4)</i>
             <div class="collapse" id="nov9-block5-playful">
               <div class="well">
@@ -1054,7 +1268,13 @@
             <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson2 col-xs-10 col-sm-9">
-            <p class="lead">Inclusivity Through Documentation: Using Gestalt Principles and Plain Language to Create Effective Documents</p>
+            <p class="lead">
+              Inclusivity Through Documentation: Using Gestalt Principles and Plain Language to Create Effective Documents
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block5-documentation" aria-expanded="false" aria-controls="nov9-block5-documentation">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <i>(continued from Block 4)</i>
             <div class="collapse" id="nov9-block5-documentation">
               <div class="well">
@@ -1085,7 +1305,13 @@
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
           </div>
           <div class="schedule-keynote col-xs-10 col-sm-9">
-            <p class="lead">Building Digital Strategies from the Bottom Up: Leading Technology Projects Effectively</p>
+            <p class="lead">
+              Building Digital Strategies from the Bottom Up: Leading Technology Projects Effectively
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block1-strategies" aria-expanded="false" aria-controls="nov10-block1-strategies">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Margaret Heller</strong>, Loyola University Chicago
@@ -1107,7 +1333,13 @@
             <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
           </div>
           <div class="schedule-lecture col-xs-10 col-sm-9">
-            <p class="lead">Innovation on a Shoestring: Free &amp; Cheap Tools</p>
+            <p class="lead">
+              Innovation on a Shoestring: Free &amp; Cheap Tools
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block1-shoestring" aria-expanded="false" aria-controls="nov10-block1-shoestring">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Christa Porter</strong>, Nebraska Library Commission
@@ -1134,7 +1366,13 @@
                 9:10 &ndash; 9:30
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Hey Google, Is there a copy of Fox in Socks available at my library?</p>
+                <p class="lead">
+                  Hey Google, Is there a copy of Fox in Socks available at my library?
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block1-fox" aria-expanded="false" aria-controls="nov10-block1-fox">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Lauren Ajamie</strong>, University of Notre Dame
@@ -1150,7 +1388,13 @@
                 9:30 &ndash; 9:50
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Blockchain and its impact on Libraries</p>
+                <p class="lead">
+                  Blockchain and its impact on Libraries
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block1-blockchain" aria-expanded="false" aria-controls="nov10-block1-blockchain">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Amy Jiang</strong>, University of La Verne
@@ -1176,7 +1420,13 @@
                 9:10 &ndash; 9:30
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Access to Humanities Scholarship though Public Search Engines</p>
+                <p class="lead">
+                  Access to Humanities Scholarship though Public Search Engines
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block1-humanities" aria-expanded="false" aria-controls="nov10-block1-humanities">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Jody Condit Fagan</strong>, James Madison University
@@ -1195,7 +1445,13 @@
                 9:30 &ndash; 9:50
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Implementing Rights Statements with Existing Digital Collections</p>
+                <p class="lead">
+                  Implementing Rights Statements with Existing Digital Collections
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block1-rights" aria-expanded="false" aria-controls="nov10-block1-rights">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Nancy Sims</strong>, University of Minnesota
@@ -1219,8 +1475,13 @@
             <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson1 col-xs-10 col-sm-9">
-            <p class="lead">KML for Dummies: Using Excel, Earth Point, and Notepad++ to Create Google Earth Visualizations of Geographic Data Encoded in Catalog Records</p>
-            <i>(continues in Block 2)</i>
+            <p class="lead">
+              KML for Dummies: Using Excel, Earth Point, and Notepad++ to Create Google Earth Visualizations of Geographic Data Encoded in Catalog Records
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block1-kml" aria-expanded="false" aria-controls="nov10-block1-kml">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Dejah Rubel</strong>, Ferris State University
@@ -1231,6 +1492,7 @@
                 In this session attendees will learn how to create an Excel spreadsheet that can be fed into Earth Point to generate a KML file. They will then edit that KML file to include an image on each data point. If time permits, additional considerations, such as adding or changing styles, adding layers, etc. will also be discussed. Attendees will leave this session with a template Excel spreadsheet, a KML file that displays their data points on Google Earth Pro, and references to other column headings and icons they may use in future Excel to KML conversions.
               </div>
             </div>
+            <i>(continues in Block 2)</i>
           </div>
         </div>
 
@@ -1239,7 +1501,13 @@
             <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson2 col-xs-10 col-sm-9">
-            <p class="lead">MetaLAB &ndash; Library Kitchen</p>
+            <p class="lead">
+              MetaLAB &ndash; Library Kitchen
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block1-metalab" aria-expanded="false" aria-controls="nov10-block1-metalab">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <i>(continues in Block 2)</i>
             <div class="collapse" id="nov10-block1-metalab">
               <div class="well">
@@ -1269,7 +1537,13 @@
             <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
           </div>
           <div class="schedule-lecture col-xs-10 col-sm-9">
-            <p class="lead">No budget, no deliverable, no problem: Scrappy, web-based user experience research to inform assumptions about users’ dispositions</p>
+            <p class="lead">
+              No budget, no deliverable, no problem: Scrappy, web-based user experience research to inform assumptions about users’ dispositions
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block2-scrappy" aria-expanded="false" aria-controls="nov10-block2-scrappy">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Jes Mattera</strong>, Champlain College
@@ -1296,7 +1570,13 @@
                 10:00 &ndash; 10:20
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">How Does/Should Library IT?</p>
+                <p class="lead">
+                  How Does/Should Library IT?
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block2-how" aria-expanded="false" aria-controls="nov10-block2-how">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Brian Rogers</strong>, University of Tennessee at Chattanooga Library
@@ -1312,7 +1592,13 @@
                 10:20 &ndash; 10:40
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">The Bibliometric Study and the New Science Librarian</p>
+                <p class="lead">
+                  The Bibliometric Study and the New Science Librarian
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block2-bibliometric" aria-expanded="false" aria-controls="nov10-block2-bibliometric">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Cari Didion</strong>, Governors State University
@@ -1361,7 +1647,13 @@
             <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson1 col-xs-10 col-sm-9">
-            <p class="lead">KML for Dummies: Using Excel, Earth Point, and Notepad++ to Create Google Earth Visualizations of Geographic Data Encoded in Catalog Records</p>
+            <p class="lead">
+              KML for Dummies: Using Excel, Earth Point, and Notepad++ to Create Google Earth Visualizations of Geographic Data Encoded in Catalog Records
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block2-kml" aria-expanded="false" aria-controls="nov10-block2-kml">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <i>(continued from Block 1)</i>
             <div class="collapse" id="nov10-block2-kml">
               <div class="well">
@@ -1376,7 +1668,13 @@
             <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson2 col-xs-10 col-sm-9">
-            <p class="lead">MetaLAB &ndash; Library Kitchen</p>
+            <p class="lead">
+              MetaLAB &ndash; Library Kitchen
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block2-metalab" aria-expanded="false" aria-controls="nov10-block2-metalab">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <i>(continued from Block 1)</i>
             <div class="collapse" id="nov10-block2-metalab">
               <div class="well">
@@ -1393,7 +1691,13 @@
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
           </div>
           <div class="schedule-keynote col-xs-10 col-sm-9">
-            <p class="lead">Building Together: Librarians and Developers Changing the Future</p>
+            <p class="lead">
+              Building Together: Librarians and Developers Changing the Future
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block3-together" aria-expanded="false" aria-controls="nov10-block3-together">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Christine Peterson</strong>, Amigos Library Services
@@ -1415,7 +1719,13 @@
             <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
           </div>
           <div class="schedule-lecture col-xs-10 col-sm-9">
-            <p class="lead">Library Disrupted! Introduce Innovation. Challenge the Status Quo.</p>
+            <p class="lead">
+              Library Disrupted! Introduce Innovation. Challenge the Status Quo.
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block3-disrupted" aria-expanded="false" aria-controls="nov10-block3-disrupted">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Saima Kadir</strong>, Houston Public Library
@@ -1442,7 +1752,13 @@
                 11:10 &ndash; 11:30
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">The Other Data Management: Applying Data Internally to Motivate Your Team</p>
+                <p class="lead">
+                  The Other Data Management: Applying Data Internally to Motivate Your Team
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block3-management" aria-expanded="false" aria-controls="nov10-block3-management">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Laura Costello</strong>, Rutgers University
@@ -1458,7 +1774,13 @@
                 11:30 &ndash; 11:50
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">One Record at a Time: Student Success, Collection Visibility, and Linked Data in the Mid-size University</p>
+                <p class="lead">
+                  One Record at a Time: Student Success, Collection Visibility, and Linked Data in the Mid-size University
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block3-linked" aria-expanded="false" aria-controls="nov10-block3-linked">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Jodene Pappas</strong>, Stephen F. Austin State University
@@ -1490,7 +1812,13 @@
                 11:10 &ndash; 11:30
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Making Library Agile Teams Work</p>
+                <p class="lead">
+                  Making Library Agile Teams Work
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block3-agile" aria-expanded="false" aria-controls="nov10-block3-agile">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Robin Dean</strong>, Michigan State University Libraries
@@ -1532,7 +1860,13 @@
             <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson1 col-xs-10 col-sm-9">
-            <p class="lead">Service Design: Thinking Holistically about Services &amp; Technology</p>
+            <p class="lead">
+              Service Design: Thinking Holistically about Services &amp; Technology
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block3-service" aria-expanded="false" aria-controls="nov10-block3-service">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Ken Varnum</strong>, University of Michigan
@@ -1554,7 +1888,13 @@
             <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson2 col-xs-10 col-sm-9">
-            <p class="lead">Developing Your Own Zooniverse Projects</p>
+            <p class="lead">
+              Developing Your Own Zooniverse Projects
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block3-zooniverse" aria-expanded="false" aria-controls="nov10-block3-zooniverse">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Justin Schell</strong>, University of Michigan Library
@@ -1591,7 +1931,13 @@
             <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
           </div>
           <div class="schedule-lecture col-xs-10 col-sm-9">
-            <p class="lead">Libraries, Educational Technology, and the TPCK Framework</p>
+            <p class="lead">
+              Libraries, Educational Technology, and the TPCK Framework
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block4-tpck" aria-expanded="false" aria-controls="nov10-block4-tpck">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Jason Byrd</strong>, Adelphi University
@@ -1618,7 +1964,13 @@
                 1:00 &ndash; 1:20
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Vendor VPAT Analysis and Policies for Accessibility</p>
+                <p class="lead">
+                  Vendor VPAT Analysis and Policies for Accessibility
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block4-vpat" aria-expanded="false" aria-controls="nov10-block4-vpat">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Samuel Willis</strong>, Wichita State University
@@ -1655,7 +2007,13 @@
                 1:00 &ndash; 1:20
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">The Maker Mindset</p>
+                <p class="lead">
+                  The Maker Mindset
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block4-mindset" aria-expanded="false" aria-controls="nov10-block4-mindset">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Edward Iglesias</strong>, Stephen F. Austin University
@@ -1671,7 +2029,13 @@
                 1:20 &ndash; 1:40
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">Library as innovation and entrepreneurship incubator</p>
+                <p class="lead">
+                  Library as innovation and entrepreneurship incubator
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block4-entrepreneurship" aria-expanded="false" aria-controls="nov10-block4-entrepreneurship">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Amy Jiang</strong>, University of La Verne
@@ -1697,7 +2061,13 @@
             <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson1 col-xs-10 col-sm-9">
-            <p class="lead">Neutrality and Digital Architecture</p>
+            <p class="lead">
+              Neutrality and Digital Architecture
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block4-neutrality" aria-expanded="false" aria-controls="nov10-block4-neutrality">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <div class="collapse" id="nov10-block4-neutrality">
               <div class="well">
                 The idea of neutrality is floated around a lot in our profession these days, but I believe there is a fundamental misunderstanding of what neutrality is and how it functions for libraries. I would like to highlight how our inherent biases and digital architecture undermine our core values of intellectual freedom and open access.
@@ -1711,7 +2081,13 @@
             <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson2 col-xs-10 col-sm-9">
-            <p class="lead">Step-by-step process for building a metadata-driven library web presence</p>
+            <p class="lead">
+              Step-by-step process for building a metadata-driven library web presence
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block4-metadata" aria-expanded="false" aria-controls="nov10-block4-metadata">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Cynthia Schwarz</strong>, Temple University
@@ -1733,7 +2109,13 @@
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
           </div>
           <div class="schedule-keynote col-xs-10 col-sm-9">
-            <p class="lead">HPL FindIt:  Smart maps come to the library!</p>
+            <p class="lead">
+              HPL FindIt:  Smart maps come to the library!
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block4-maps" aria-expanded="false" aria-controls="nov10-block4-maps">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Rick Peralez</strong>, Houston Public Library
@@ -1773,7 +2155,13 @@
                 1:40 &ndash; 2:00
               </div>
               <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                <p class="lead">The Cat Herder: Maintaining Standards for Research Guides Without Making People Hate You</p>
+                <p class="lead">
+                  The Cat Herder: Maintaining Standards for Research Guides Without Making People Hate You
+                  <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block4-cats" aria-expanded="false" aria-controls="nov10-block4-cats">
+                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-up"></i>
+                  </a>
+                </p>
                 <ul class="list-unstyled">
                   <li>
                     <strong>Ashley Lierman</strong>, University of Houston
@@ -1799,7 +2187,7 @@
           <div class="legend-problems col-xs-2 col-sm-3">
             <i class="fas fa-puzzle-piece"></i> <span class="hidden-xs">Problem-Solving Room</span>
           </div>
-          <div class="schedule-discussion col-xs-10 col-sm-9">
+          <div class="schedule-problems col-xs-10 col-sm-9">
             <div class="row">
               <div class="col-xs-12 col-sm-3 col-sm-push-9 col-md-2 col-md-push-10">
                 1:40 &ndash; 2:00
@@ -1822,7 +2210,13 @@
             <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson1 col-xs-10 col-sm-9">
-            <p class="lead">Go With the Flow: NiFi for Automation and Data Processing</p>
+            <p class="lead">
+              Go With the Flow: NiFi for Automation and Data Processing
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block4-nifi" aria-expanded="false" aria-controls="nov10-block4-nifi">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Lauren Ajamie</strong>, University of Notre Dame
@@ -1841,7 +2235,13 @@
             <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
           </div>
           <div class="schedule-handson2 col-xs-10 col-sm-9">
-            <p class="lead">Building websites and leading librarians to a new level of project engagement</p>
+            <p class="lead">
+              Building websites and leading librarians to a new level of project engagement
+              <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov10-block4-engagement" aria-expanded="false" aria-controls="nov10-block4-engagement">
+                <i class="fas fa-angle-double-down"></i>
+                <i class="fas fa-angle-double-up"></i>
+              </a>
+            </p>
             <ul class="list-unstyled">
               <li>
                 <strong>Marina Georgieva</strong>, UNLV Libraries, Las Vegas, NV

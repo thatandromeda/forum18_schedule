@@ -7,9 +7,66 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Forum 2018 Schedule</title>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- begin WP imports ----------------------------------------------------->
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="https://forum.lita.org/wp-content/themes/Tyler/css/ie8.css" />
+    <![endif]-->
+    <!--[if lte IE 7]>
+      <link rel="stylesheet" href="https://forum.lita.org/wp-content/themes/Tyler/css/bootstrap-ie7.css" />
+      <style type="text/css">
+          .col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12,.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,.input-group,.row,.content{
+              box-sizing:border-box;behavior:url(https://forum.lita.org/wp-content/themes/Tyler/js/boxsizing.htc)
+          }
+      </style>
+      <link rel="stylesheet" href="https://forum.lita.org/wp-content/themes/Tyler/css/ie7.css" />
+    <![endif]-->
+    <!-- HTML5 Shim, Respond.js and PIE.htc IE8 support of HTML5 elements, media queries and CSS3 -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+      <style type="text/css">
+          .speakers .speaker .speaker-inner, .speakers .photo img, .connect, .sessions .session .speaker img,
+          .connect .links a:hover:before, .sessions .session .session-inner, .location .explore, .location .map,
+          .articles article .image, .facebook .fb-event, .facebook .fb-view, .twitter .view, .twitter .tweet,
+          .sidebar .widget_latest_comments li a,.sidebar h2, .articles article .image, .comments-area h2,
+          .commentlist .comment .comment-content,.commentlist .comment .comment-content:after,
+          .timecounter, input[type=text], textarea, .landing .box, h1 img.img-circle {
+              behavior: url("https://forum.lita.org/wp-content/themes/Tyler/js/pie/PIE.htc");
+          }
+      </style>
+    <![endif]-->
+    <link rel='stylesheet' id='wpstatistics-css-css'  href='https://forum.lita.org/wp-content/plugins/wp-statistics/assets/css/frontend.css?ver=12.4.0' type='text/css' media='all' />
+    <link rel='stylesheet' id='tyler-google-font-css'  href='//fonts.googleapis.com/css?family=Ubuntu%3A300%2C400%2C500%2C700&#038;ver=4.9.8' type='text/css' media='all' />
+    <link rel='stylesheet' id='tyler-bootstrap-css'  href='https://forum.lita.org/wp-content/themes/Tyler/css/bootstrap.min.css?ver=4.9.8' type='text/css' media='all' />
+    <link rel='stylesheet' id='tyler-blueimp-gallery-css'  href='https://forum.lita.org/wp-content/themes/Tyler/css/blueimp-gallery.min.css?ver=4.9.8' type='text/css' media='all' />
+    <link rel='stylesheet' id='tyler-jquery-scrollpane-css'  href='https://forum.lita.org/wp-content/themes/Tyler/css/jquery.scrollpane.css?ver=4.9.8' type='text/css' media='all' />
+    <link rel='stylesheet' id='tyler-icons-css'  href='https://forum.lita.org/wp-content/themes/Tyler/css/icon.css?ver=4.9.8' type='text/css' media='all' />
+    <link rel='stylesheet' id='tyler-layout-css'  href='https://forum.lita.org/wp-content/themes/Tyler/css/layout.css?ver=4.9.8' type='text/css' media='all' />
+    <link rel='stylesheet' id='tyler-layout-mobile-css'  href='https://forum.lita.org/wp-content/themes/Tyler/css/layout-mobile.css?ver=4.9.8' type='text/css' media='all' />
+    <link rel='stylesheet' id='tyler-style-css'  href='https://forum.lita.org/wp-content/themes/Tyler/style.css?ver=4.9.8' type='text/css' media='all' />
+    <link rel='stylesheet' id='bangkok-scheme-css'  href='https://forum.lita.org/wp-content/themes/Tyler/css/schemes/bangkok/layout.css?ver=4.9.8' type='text/css' media='all' />
 
+    <style type="text/css" id="wp-custom-css">
+      .menu-menu-1-container a, a.btn {
+          text-decoration: none;
+      }
+
+      header ul li a {text-decoration: none;}
+
+      header #logo img {float:left;}
+
+      .row h2{font-size:42px;}
+
+      #menu-item-1372 a {background:#13cd05; color:#fff;}
+
+      #menu-item-1372 a:hover {background:#000;}
+    </style>
+    <!-- end WP imports ------------------------------------------------------->
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- local customizations -->
     <style>
       .schedule-block > .row {
         border-top: 1px solid #ccc;
@@ -77,6 +134,43 @@
       [aria-expanded="true"] > .fa-angle-double-down {
         display: none;
       }
+
+      .legend-keynote .fas,
+      .legend-lecture .fas,
+      .legend-discussion .fas,
+      .legend-problems .fas,
+      .legend-handson1 .fas,
+      .legend-handson2 .fas {
+        float: left;
+        margin-right: 0.5em;
+      }
+
+      h2, h3 {
+        margin: 0.75em auto;
+      }
+
+      .schedule-block .row {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      .schedule-block .row > div {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+      }
+      @media (max-width: 767px) {
+        .schedule-block .row > div {
+          padding-top: 0.25em;
+          padding-bottom: 0.25em;
+        }
+      }
+
+      .schedule-block .row > div:first-child {
+        padding-left: 0;
+      }
+
+      .schedule-block .col-xs-12 {
+        padding-left: 0;
+      }
     </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -86,14 +180,65 @@
     <![endif]-->
   </head>
   <body>
-    <h1>Forum 2018 Schedule</h1>
+    <header class="nav transition">
+      <a href="https://forum.lita.org" id="logo">
+        <img src="http://forum.lita.org/wp-content/uploads/2017/06/170516-lita-forum17-logo-for-website-ART-opt2.png" alt="Logo 2018 LITA Forum" title="2018 LITA Forum" />
+      </a>
+      <nav class="navbar" role="navigation">
+        <!-- mobile navigation -->
+        <div class="navbar-header visible-sm visible-xs">
+          <button type="button" class="btn btn-primary navbar-toggle" data-toggle="collapse" data-target="#tyler-navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <i class="icon-header"></i>
+          </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse text-fit" id="tyler-navigation">
+          <div class="menu-menu-2-container">
+            <ul id="menu-primary" class="transition">
+              <li id="menu-item-1952" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1952"><a href="http://forum.lita.org/">2018 LITA Forum</a></li>
+              <li id="menu-item-1251" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1251"><a href="https://forum.lita.org/about/">About</a>
+                <ul class="sub-menu">
+                	<li id="menu-item-1279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1279"><a href="https://forum.lita.org/about/statement-of-appropriate-conduct/">Statement of Appropriate Conduct</a></li>
+                	<li id="menu-item-1278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1278"><a href="https://forum.lita.org/about/privacy-and-safety-at-forum/">Privacy and Safety at Forum</a></li>
+                	<li id="menu-item-1254" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1254"><a href="https://forum.lita.org/about/planning-committee/">Planning Committee</a></li>
+                	<li id="menu-item-1288" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1288"><a href="http://forum.lita.org/2017/">2017 LITA Forum</a></li>
+                </ul>
+              </li>
+              <li id="menu-item-1332" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor current-menu-ancestor current-menu-parent current-page-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-1332"><a href="https://forum.lita.org/attending/">Attending</a>
+                <ul class="sub-menu">
+                	<li id="menu-item-2471" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-272 current_page_item menu-item-2471"><a href="https://thatandromeda.github.io/forum2018_schedule/">LITA Forum 2018 Schedule</a></li>
+                </ul>
+              </li>
+              <li id="menu-item-1309" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1309"><a href="https://forum.lita.org/registrationtravel/">Registration/Travel</a>
+                <ul class="sub-menu">
+                	<li id="menu-item-1420" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1420"><a href="https://forum.lita.org/local-information/">Local Information</a></li>
+                	<li id="menu-item-2420" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2420"><a href="https://forum.lita.org/registrationtravel/accessibility-at-forum/">Accessibility at Forum</a></li>
+                </ul>
+              </li>
+              <li id="menu-item-1462" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1462"><a href="https://forum.lita.org/sponsors/">Sponsors</a>
+                <ul class="sub-menu">
+                	<li id="menu-item-1469" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1469"><a href="https://forum.lita.org/sponsors/prospectus/">Prospectus</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
+    <div class="heading">
+      <div class="container">
+        <h1>LITA Forum 2018 Schedule</h1>
+      </div>
+    </div>
     <!-- TODO:
          * Integrate descriptions
          * "It would be made of magic if clicking on a room got you the "room" view so you could see what was going on in that room all day." (and then make sure you can go back to view all)
          * Are there discussion facilitators who should be listed?
     -->
 
+    <div class="container">
     <h2>
       <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov8" aria-expanded="true" aria-controls="nov8">
         <i class="fas fa-angle-double-down"></i>
@@ -105,7 +250,7 @@
     <div class="collapse in" id="nov8">
       <h3>Preconferences: 1:00pm &mdash; 5:00pm</h3>
 
-      <div class="container-fluid schedule-block">
+      <div class="schedule-block">
         <div class="row">
           <div class="col-xs-2 col-sm-3">
             <span class="hidden-xs">Room TBA</span>
@@ -202,7 +347,7 @@
 
     <div class="collapse in" id="nov9">
       <h3>Opening Keynote: 9:30am &mdash; 10:30am</h3>
-      <div class="container-fluid schedule-block">
+      <div class="schedule-block">
         <div class="row">
           <div class="legend-keynote col-xs-2 col-sm-3">
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
@@ -214,7 +359,7 @@
       </div>
 
       <h3>Welcome to Forum: 10:30am &mdash; 11:11am</h3>
-      <div class="container-fluid schedule-block">
+      <div class="schedule-block">
         <div class="row">
           <div class="legend-keynote col-xs-2 col-sm-3">
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
@@ -226,7 +371,7 @@
       </div>
 
       <h3>Block 1: 11:00am &mdash; 12:00pm</h3>
-      <div class="container-fluid schedule-block">
+      <div class="schedule-block">
         <div class="row">
           <div class="legend-keynote col-xs-2 col-sm-3">
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
@@ -467,7 +612,7 @@
       <h3>Lunch: 12:00pm &mdash; 1:00pm</h3>
 
       <h3>Block 2: 1:00pm &mdash; 2:00pm</h3>
-      <div class="container-fluid schedule-block">
+      <div class="schedule-block">
         <div class="row">
           <div class="legend-keynote col-xs-2 col-sm-3">
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
@@ -679,7 +824,7 @@
       </div>
 
       <h3>Block 3: 2:10pm &mdash; 3:10pm</h3>
-      <div class="container-fluid schedule-block">
+      <div class="schedule-block">
         <div class="row">
           <div class="legend-keynote col-xs-2 col-sm-3">
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
@@ -878,7 +1023,7 @@
       <h3>Afternoon Break: 3:10pm &mdash; 3:30pm</h3>
 
       <h3>Block 4: 3:30pm &mdash; 4:30pm</h3>
-      <div class="container-fluid schedule-block">
+      <div class="schedule-block">
         <div class="row">
           <div class="legend-keynote col-xs-2 col-sm-3">
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
@@ -1107,7 +1252,7 @@
       </div>
 
       <h3>Block 5: 4:40pm &mdash; 5:40pm</h3>
-      <div class="container-fluid schedule-block">
+      <div class="schedule-block">
         <div class="row">
           <div class="legend-keynote col-xs-2 col-sm-3">
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
@@ -1299,7 +1444,7 @@
 
     <div class="collapse in" id="nov10">
       <h3>Block 1: 9:10am &mdash; 9:50am</h3>
-      <div class="container-fluid schedule-block">
+      <div class="schedule-block">
         <div class="row">
           <div class="legend-keynote col-xs-2 col-sm-3">
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
@@ -1518,7 +1663,7 @@
       </div>
 
       <h3>Block 2: 10:00am &mdash; 11:00am</h3>
-      <div class="container-fluid schedule-block">
+      <div class="schedule-block">
         <div class="row">
           <div class="legend-keynote col-xs-2 col-sm-3">
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
@@ -1685,7 +1830,7 @@
       </div>
 
       <h3>Block 3: 11:10am &mdash; 12:00pm</h3>
-      <div class="container-fluid schedule-block">
+      <div class="schedule-block">
         <div class="row">
           <div class="legend-keynote col-xs-2 col-sm-3">
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
@@ -1912,7 +2057,7 @@
       <h3>Lunch: 12:00pm &mdash; 1:00pm</h3>
 
       <h3>Block 4: 1:00pm &mdash; 1:40pm</h3>
-      <div class="container-fluid schedule-block">
+      <div class="schedule-block">
         <div class="row">
           <div class="legend-keynote col-xs-2 col-sm-3">
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
@@ -2103,7 +2248,7 @@
       </div>
 
       <h3>Block 5: 1:40pm &mdash; 2:20pm</h3>
-      <div class="container-fluid schedule-block">
+      <div class="schedule-block">
         <div class="row">
           <div class="legend-keynote col-xs-2 col-sm-3">
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
@@ -2257,7 +2402,7 @@
       </div>
 
       <h3>Conference summary: 2:30pm &mdash; 3:00pm</h3>
-      <div class="container-fluid schedule-block">
+      <div class="schedule-block">
         <div class="row">
           <div class="legend-keynote col-xs-2 col-sm-3">
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
@@ -2269,7 +2414,7 @@
       </div>
 
       <h3>Closing Keynote: 3:00pm &mdash; 4:00pm</h3>
-      <div class="container-fluid schedule-block">
+      <div class="schedule-block">
         <div class="row">
           <div class="legend-keynote col-xs-2 col-sm-3">
             <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
@@ -2280,13 +2425,14 @@
         </div>
       </div>
     </div>
+  </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- fontawesome -->
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='https://forum.lita.org/wp-content/themes/Tyler/js/jquery.jscrollpane.min.js?ver=4.9.8'></script>
+    <script type='text/javascript' src='https://forum.lita.org/wp-content/themes/Tyler/js/main.js?ver=4.9.8'></script>
   </body>
 </html>

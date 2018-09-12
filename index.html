@@ -87,9 +87,19 @@
         border-bottom: 1px solid #ccc;
       }
 
+      .legend {
+        font-weight: bold;
+      }
+      .legend:hover {
+        color: white;
+        cursor: pointer;
+      }
+
       .legend-keynote {
         color: #d12e3b;
-        font-weight: bold;
+      }
+      .legend-keynote:hover {
+        background-color: #d12e3b;
       }
       .schedule-keynote {
         background-color: #FFD9E3;
@@ -97,7 +107,9 @@
 
       .legend-lecture {
         color: #D14205;
-        font-weight: bold;
+      }
+      .legend-lecture:hover {
+        background-color: #D14205;
       }
       .schedule-lecture {
         background-color: #FFDAA5;
@@ -105,7 +117,9 @@
 
       .legend-discussion {
         color: #A89200;
-        font-weight: bold;
+      }
+      .legend-discussion:hover {
+        background-color: #A89200;
       }
       .schedule-discussion {
         background-color: #FFFFB3;
@@ -113,7 +127,9 @@
 
       .legend-problems {
         color: #1D8174;
-        font-weight: bold;
+      }
+      .legend-problems:hover {
+        background-color: #1D8174;
       }
       .schedule-problems {
         background-color: #CBFFE3;
@@ -121,7 +137,9 @@
 
       .legend-handson1 {
         color: #007CAD;
-        font-weight: bold;
+      }
+      .legend-handson1:hover {
+        background-color: #007CAD;
       }
       .schedule-handson1 {
         background-color: #E4FFFF;
@@ -129,7 +147,9 @@
 
       .legend-handson2 {
         color: #0076D6;
-        font-weight: bold;
+      }
+      .legend-handson2:hover {
+        background-color: #0076D6;
       }
       .schedule-handson2 {
         background-color: #CCFFFF;
@@ -366,7 +386,7 @@
         <h3>Opening Keynote: 9:30am &mdash; 10:30am</h3>
         <div class="schedule-block">
           <div class="row">
-            <div class="legend-keynote col-xs-2 col-sm-3">
+            <div class="legend legend-keynote col-xs-2 col-sm-3">
               <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
             </div>
             <div class="schedule-keynote col-xs-10 col-sm-9">
@@ -378,7 +398,7 @@
         <h3>Welcome to Forum: 10:30am &mdash; 11:11am</h3>
         <div class="schedule-block">
           <div class="row">
-            <div class="legend-keynote col-xs-2 col-sm-3">
+            <div class="legend legend-keynote col-xs-2 col-sm-3">
               <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
             </div>
             <div class="schedule-keynote col-xs-10 col-sm-9">
@@ -390,7 +410,7 @@
         <h3>Block 1: 11:00am &mdash; 12:00pm</h3>
         <div class="schedule-block">
           <div class="row">
-            <div class="legend-keynote col-xs-2 col-sm-3">
+            <div class="legend legend-keynote col-xs-2 col-sm-3">
               <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
             </div>
             <div class="schedule-keynote col-xs-10 col-sm-9">
@@ -418,7 +438,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-lecture col-xs-2 col-sm-3">
+            <div class="legend legend-lecture col-xs-2 col-sm-3">
               <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
             </div>
             <div class="schedule-lecture col-xs-10 col-sm-9">
@@ -444,7 +464,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-discussion col-xs-2 col-sm-3">
+            <div class="legend legend-discussion col-xs-2 col-sm-3">
               <i class="fas fa-comments"></i> <span class="hidden-xs">Discussions Room</span>
             </div>
             <div class="schedule-discussion col-xs-10 col-sm-9">
@@ -504,7 +524,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-problems col-xs-2 col-sm-3">
+            <div class="legend legend-problems col-xs-2 col-sm-3">
               <i class="fas fa-puzzle-piece"></i> <span class="hidden-xs">Problem-Solving Room</span>
             </div>
             <div class="schedule-problems col-xs-10 col-sm-9">
@@ -576,7 +596,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson1 col-xs-2 col-sm-3">
+            <div class="legend legend-handson1 col-xs-2 col-sm-3">
               <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson1 col-xs-10 col-sm-9">
@@ -601,7 +621,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson2 col-xs-2 col-sm-3">
+            <div class="legend legend-handson2 col-xs-2 col-sm-3">
               <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson2 col-xs-10 col-sm-9">
@@ -631,7 +651,7 @@
         <h3>Block 2: 1:00pm &mdash; 2:00pm</h3>
         <div class="schedule-block">
           <div class="row">
-            <div class="legend-keynote col-xs-2 col-sm-3">
+            <div class="legend legend-keynote col-xs-2 col-sm-3">
               <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
             </div>
             <div class="schedule-keynote col-xs-10 col-sm-9">
@@ -659,7 +679,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-lecture col-xs-2 col-sm-3">
+            <div class="legend legend-lecture col-xs-2 col-sm-3">
               <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
             </div>
             <div class="schedule-lecture col-xs-10 col-sm-9">
@@ -690,7 +710,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-discussion col-xs-2 col-sm-3">
+            <div class="legend legend-discussion col-xs-2 col-sm-3">
               <i class="fas fa-comments"></i> <span class="hidden-xs">Discussions Room</span>
             </div>
             <div class="schedule-discussion col-xs-10 col-sm-9">
@@ -734,7 +754,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-problems col-xs-2 col-sm-3">
+            <div class="legend legend-problems col-xs-2 col-sm-3">
               <i class="fas fa-puzzle-piece"></i> <span class="hidden-xs">Problem-Solving Room</span>
             </div>
             <div class="schedule-problems col-xs-10 col-sm-9">
@@ -800,7 +820,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson1 col-xs-2 col-sm-3">
+            <div class="legend legend-handson1 col-xs-2 col-sm-3">
               <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson1 col-xs-10 col-sm-9">
@@ -820,7 +840,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson2 col-xs-2 col-sm-3">
+            <div class="legend legend-handson2 col-xs-2 col-sm-3">
               <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson2 col-xs-10 col-sm-9">
@@ -843,7 +863,7 @@
         <h3>Block 3: 2:10pm &mdash; 3:10pm</h3>
         <div class="schedule-block">
           <div class="row">
-            <div class="legend-keynote col-xs-2 col-sm-3">
+            <div class="legend legend-keynote col-xs-2 col-sm-3">
               <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
             </div>
             <div class="schedule-keynote col-xs-10 col-sm-9">
@@ -871,7 +891,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-lecture col-xs-2 col-sm-3">
+            <div class="legend legend-lecture col-xs-2 col-sm-3">
               <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
             </div>
             <div class="schedule-lecture col-xs-10 col-sm-9">
@@ -896,7 +916,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-discussion col-xs-2 col-sm-3">
+            <div class="legend legend-discussion col-xs-2 col-sm-3">
               <i class="fas fa-comments"></i> <span class="hidden-xs">Discussions Room</span>
             </div>
             <div class="schedule-discussion col-xs-10 col-sm-9">
@@ -959,7 +979,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-problems col-xs-2 col-sm-3">
+            <div class="legend legend-problems col-xs-2 col-sm-3">
               <i class="fas fa-puzzle-piece"></i> <span class="hidden-xs">Problem-Solving Room</span>
             </div>
             <div class="schedule-problems col-xs-10 col-sm-9">
@@ -997,7 +1017,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson1 col-xs-2 col-sm-3">
+            <div class="legend legend-handson1 col-xs-2 col-sm-3">
               <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson1 col-xs-10 col-sm-9">
@@ -1017,7 +1037,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson2 col-xs-2 col-sm-3">
+            <div class="legend legend-handson2 col-xs-2 col-sm-3">
               <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson2 col-xs-10 col-sm-9">
@@ -1042,7 +1062,7 @@
         <h3>Block 4: 3:30pm &mdash; 4:30pm</h3>
         <div class="schedule-block">
           <div class="row">
-            <div class="legend-keynote col-xs-2 col-sm-3">
+            <div class="legend legend-keynote col-xs-2 col-sm-3">
               <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
             </div>
             <div class="schedule-keynote col-xs-10 col-sm-9">
@@ -1067,7 +1087,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-lecture col-xs-2 col-sm-3">
+            <div class="legend legend-lecture col-xs-2 col-sm-3">
               <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
             </div>
             <div class="schedule-lecture col-xs-10 col-sm-9">
@@ -1092,7 +1112,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-discussion col-xs-2 col-sm-3">
+            <div class="legend legend-discussion col-xs-2 col-sm-3">
               <i class="fas fa-comments"></i> <span class="hidden-xs">Discussions Room</span>
             </div>
             <div class="schedule-discussion col-xs-10 col-sm-9">
@@ -1157,7 +1177,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-problems col-xs-2 col-sm-3">
+            <div class="legend legend-problems col-xs-2 col-sm-3">
               <i class="fas fa-puzzle-piece"></i> <span class="hidden-xs">Problem-Solving Room</span>
             </div>
             <div class="schedule-problems col-xs-10 col-sm-9">
@@ -1219,7 +1239,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson1 col-xs-2 col-sm-3">
+            <div class="legend legend-handson1 col-xs-2 col-sm-3">
               <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson1 col-xs-10 col-sm-9">
@@ -1239,7 +1259,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson2 col-xs-2 col-sm-3">
+            <div class="legend legend-handson2 col-xs-2 col-sm-3">
               <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson2 col-xs-10 col-sm-9">
@@ -1271,7 +1291,7 @@
         <h3>Block 5: 4:40pm &mdash; 5:40pm</h3>
         <div class="schedule-block">
           <div class="row">
-            <div class="legend-keynote col-xs-2 col-sm-3">
+            <div class="legend legend-keynote col-xs-2 col-sm-3">
               <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
             </div>
             <div class="schedule-keynote col-xs-10 col-sm-9">
@@ -1296,7 +1316,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-lecture col-xs-2 col-sm-3">
+            <div class="legend legend-lecture col-xs-2 col-sm-3">
               <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
             </div>
             <div class="schedule-lecture col-xs-10 col-sm-9">
@@ -1324,7 +1344,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-discussion col-xs-2 col-sm-3">
+            <div class="legend legend-discussion col-xs-2 col-sm-3">
               <i class="fas fa-comments"></i> <span class="hidden-xs">Discussions Room</span>
             </div>
             <div class="schedule-discussion col-xs-10 col-sm-9">
@@ -1365,7 +1385,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-problems col-xs-2 col-sm-3">
+            <div class="legend legend-problems col-xs-2 col-sm-3">
               <i class="fas fa-puzzle-piece"></i> <span class="hidden-xs">Problem-Solving Room</span>
             </div>
             <div class="schedule-problems col-xs-10 col-sm-9">
@@ -1406,7 +1426,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson1 col-xs-2 col-sm-3">
+            <div class="legend legend-handson1 col-xs-2 col-sm-3">
               <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson1 col-xs-10 col-sm-9">
@@ -1426,7 +1446,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson2 col-xs-2 col-sm-3">
+            <div class="legend legend-handson2 col-xs-2 col-sm-3">
               <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson2 col-xs-10 col-sm-9">
@@ -1463,7 +1483,7 @@
         <h3>Block 1: 9:10am &mdash; 9:50am</h3>
         <div class="schedule-block">
           <div class="row">
-            <div class="legend-keynote col-xs-2 col-sm-3">
+            <div class="legend legend-keynote col-xs-2 col-sm-3">
               <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
             </div>
             <div class="schedule-keynote col-xs-10 col-sm-9">
@@ -1491,7 +1511,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-lecture col-xs-2 col-sm-3">
+            <div class="legend legend-lecture col-xs-2 col-sm-3">
               <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
             </div>
             <div class="schedule-lecture col-xs-10 col-sm-9">
@@ -1519,7 +1539,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-discussion col-xs-2 col-sm-3">
+            <div class="legend legend-discussion col-xs-2 col-sm-3">
               <i class="fas fa-comments"></i> <span class="hidden-xs">Discussions Room</span>
             </div>
             <div class="schedule-discussion col-xs-10 col-sm-9">
@@ -1573,7 +1593,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-problems col-xs-2 col-sm-3">
+            <div class="legend legend-problems col-xs-2 col-sm-3">
               <i class="fas fa-puzzle-piece"></i> <span class="hidden-xs">Problem-Solving Room</span>
             </div>
             <div class="schedule-problems col-xs-10 col-sm-9">
@@ -1633,7 +1653,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson1 col-xs-2 col-sm-3">
+            <div class="legend legend-handson1 col-xs-2 col-sm-3">
               <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson1 col-xs-10 col-sm-9">
@@ -1659,7 +1679,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson2 col-xs-2 col-sm-3">
+            <div class="legend legend-handson2 col-xs-2 col-sm-3">
               <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson2 col-xs-10 col-sm-9">
@@ -1682,7 +1702,7 @@
         <h3>Block 2: 10:00am &mdash; 11:00am</h3>
         <div class="schedule-block">
           <div class="row">
-            <div class="legend-keynote col-xs-2 col-sm-3">
+            <div class="legend legend-keynote col-xs-2 col-sm-3">
               <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
             </div>
             <div class="schedule-keynote col-xs-10 col-sm-9">
@@ -1695,7 +1715,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-lecture col-xs-2 col-sm-3">
+            <div class="legend legend-lecture col-xs-2 col-sm-3">
               <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
             </div>
             <div class="schedule-lecture col-xs-10 col-sm-9">
@@ -1723,7 +1743,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-discussion col-xs-2 col-sm-3">
+            <div class="legend legend-discussion col-xs-2 col-sm-3">
               <i class="fas fa-comments"></i> <span class="hidden-xs">Discussions Room</span>
             </div>
             <div class="schedule-discussion col-xs-10 col-sm-9">
@@ -1783,7 +1803,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-problems col-xs-2 col-sm-3">
+            <div class="legend legend-problems col-xs-2 col-sm-3">
               <i class="fas fa-puzzle-piece"></i> <span class="hidden-xs">Problem-Solving Room</span>
             </div>
             <div class="schedule-problems col-xs-10 col-sm-9">
@@ -1805,7 +1825,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson1 col-xs-2 col-sm-3">
+            <div class="legend legend-handson1 col-xs-2 col-sm-3">
               <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson1 col-xs-10 col-sm-9">
@@ -1826,7 +1846,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson2 col-xs-2 col-sm-3">
+            <div class="legend legend-handson2 col-xs-2 col-sm-3">
               <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson2 col-xs-10 col-sm-9">
@@ -1849,7 +1869,7 @@
         <h3>Block 3: 11:10am &mdash; 12:00pm</h3>
         <div class="schedule-block">
           <div class="row">
-            <div class="legend-keynote col-xs-2 col-sm-3">
+            <div class="legend legend-keynote col-xs-2 col-sm-3">
               <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
             </div>
             <div class="schedule-keynote col-xs-10 col-sm-9">
@@ -1877,7 +1897,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-lecture col-xs-2 col-sm-3">
+            <div class="legend legend-lecture col-xs-2 col-sm-3">
               <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
             </div>
             <div class="schedule-lecture col-xs-10 col-sm-9">
@@ -1905,7 +1925,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-discussion col-xs-2 col-sm-3">
+            <div class="legend legend-discussion col-xs-2 col-sm-3">
               <i class="fas fa-comments"></i> <span class="hidden-xs">Discussions Room</span>
             </div>
             <div class="schedule-discussion col-xs-10 col-sm-9">
@@ -1965,7 +1985,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-problems col-xs-2 col-sm-3">
+            <div class="legend legend-problems col-xs-2 col-sm-3">
               <i class="fas fa-puzzle-piece"></i> <span class="hidden-xs">Problem-Solving Room</span>
             </div>
             <div class="schedule-problems col-xs-10 col-sm-9">
@@ -2018,7 +2038,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson1 col-xs-2 col-sm-3">
+            <div class="legend legend-handson1 col-xs-2 col-sm-3">
               <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson1 col-xs-10 col-sm-9">
@@ -2046,7 +2066,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson2 col-xs-2 col-sm-3">
+            <div class="legend legend-handson2 col-xs-2 col-sm-3">
               <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson2 col-xs-10 col-sm-9">
@@ -2076,7 +2096,7 @@
         <h3>Block 4: 1:00pm &mdash; 1:40pm</h3>
         <div class="schedule-block">
           <div class="row">
-            <div class="legend-keynote col-xs-2 col-sm-3">
+            <div class="legend legend-keynote col-xs-2 col-sm-3">
               <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
             </div>
             <div class="schedule-keynote col-xs-10 col-sm-9">
@@ -2089,7 +2109,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-lecture col-xs-2 col-sm-3">
+            <div class="legend legend-lecture col-xs-2 col-sm-3">
               <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
             </div>
             <div class="schedule-lecture col-xs-10 col-sm-9">
@@ -2117,7 +2137,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-discussion col-xs-2 col-sm-3">
+            <div class="legend legend-discussion col-xs-2 col-sm-3">
               <i class="fas fa-comments"></i> <span class="hidden-xs">Discussions Room</span>
             </div>
             <div class="schedule-discussion col-xs-10 col-sm-9">
@@ -2160,7 +2180,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-problems col-xs-2 col-sm-3">
+            <div class="legend legend-problems col-xs-2 col-sm-3">
               <i class="fas fa-puzzle-piece"></i> <span class="hidden-xs">Problem-Solving Room</span>
             </div>
             <div class="schedule-problems col-xs-10 col-sm-9">
@@ -2219,7 +2239,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson1 col-xs-2 col-sm-3">
+            <div class="legend legend-handson1 col-xs-2 col-sm-3">
               <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson1 col-xs-10 col-sm-9">
@@ -2239,7 +2259,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson2 col-xs-2 col-sm-3">
+            <div class="legend legend-handson2 col-xs-2 col-sm-3">
               <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson2 col-xs-10 col-sm-9">
@@ -2267,7 +2287,7 @@
         <h3>Block 5: 1:40pm &mdash; 2:20pm</h3>
         <div class="schedule-block">
           <div class="row">
-            <div class="legend-keynote col-xs-2 col-sm-3">
+            <div class="legend legend-keynote col-xs-2 col-sm-3">
               <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
             </div>
             <div class="schedule-keynote col-xs-10 col-sm-9">
@@ -2295,7 +2315,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-lecture col-xs-2 col-sm-3">
+            <div class="legend legend-lecture col-xs-2 col-sm-3">
               <i class="fas fa-chalkboard-teacher"></i> <span class="hidden-xs">Special Lecture Room</span>
             </div>
             <div class="schedule-lecture col-xs-10 col-sm-9">
@@ -2308,7 +2328,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-discussion col-xs-2 col-sm-3">
+            <div class="legend legend-discussion col-xs-2 col-sm-3">
               <i class="fas fa-comments"></i> <span class="hidden-xs">Discussions Room</span>
             </div>
             <div class="schedule-discussion col-xs-10 col-sm-9">
@@ -2346,7 +2366,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-problems col-xs-2 col-sm-3">
+            <div class="legend legend-problems col-xs-2 col-sm-3">
               <i class="fas fa-puzzle-piece"></i> <span class="hidden-xs">Problem-Solving Room</span>
             </div>
             <div class="schedule-problems col-xs-10 col-sm-9">
@@ -2368,7 +2388,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson1 col-xs-2 col-sm-3">
+            <div class="legend legend-handson1 col-xs-2 col-sm-3">
               <i class="fas fa-hand-peace"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson1 col-xs-10 col-sm-9">
@@ -2393,7 +2413,7 @@
           </div>
 
           <div class="row">
-            <div class="legend-handson2 col-xs-2 col-sm-3">
+            <div class="legend legend-handson2 col-xs-2 col-sm-3">
               <i class="fas fa-hand-spock"></i> <span class="hidden-xs">Hands-On Room 1</span>
             </div>
             <div class="schedule-handson2 col-xs-10 col-sm-9">
@@ -2421,7 +2441,7 @@
         <h3>Conference summary: 2:30pm &mdash; 3:00pm</h3>
         <div class="schedule-block">
           <div class="row">
-            <div class="legend-keynote col-xs-2 col-sm-3">
+            <div class="legend legend-keynote col-xs-2 col-sm-3">
               <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
             </div>
             <div class="schedule-keynote col-xs-10 col-sm-9">
@@ -2433,7 +2453,7 @@
         <h3>Closing Keynote: 3:00pm &mdash; 4:00pm</h3>
         <div class="schedule-block">
           <div class="row">
-            <div class="legend-keynote col-xs-2 col-sm-3">
+            <div class="legend legend-keynote col-xs-2 col-sm-3">
               <i class="fas fa-key"></i> <span class="hidden-xs">Keynote/Streaming Room</span>
             </div>
             <div class="schedule-keynote col-xs-10 col-sm-9">
@@ -2495,5 +2515,63 @@
 
     <script type='text/javascript' src='https://forum.lita.org/wp-content/themes/Tyler/js/jquery.jscrollpane.min.js?ver=4.9.8'></script>
     <script type='text/javascript' src='https://forum.lita.org/wp-content/themes/Tyler/js/main.js?ver=4.9.8'></script>
+    <script>
+      // I am full of shame about this JavaScript, I did not have time to make
+      // it nicer, pull requests welcome
+      var keynote = $('.legend-keynote').parent('.row');
+      var lecture = $('.legend-lecture').parent('.row');;
+      var discussion = $('.legend-discussion').parent('.row');;
+      var problems = $('.legend-problems').parent('.row');;
+      var handson1 = $('.legend-handson1').parent('.row');;
+      var handson2 = $('.legend-handson2').parent('.row');;
+
+      $('.legend-keynote').click(function() {
+        lecture.toggle()
+        discussion.toggle()
+        problems.toggle()
+        handson1.toggle()
+        handson2.toggle()
+      });
+
+      $('.legend-lecture').click(function() {
+        keynote.toggle()
+        discussion.toggle()
+        problems.toggle()
+        handson1.toggle()
+        handson2.toggle()
+      });
+
+      $('.legend-discussion').click(function() {
+        keynote.toggle()
+        lecture.toggle()
+        problems.toggle()
+        handson1.toggle()
+        handson2.toggle()
+      });
+
+      $('.legend-problems').click(function() {
+        keynote.toggle()
+        lecture.toggle()
+        discussion.toggle()
+        handson1.toggle()
+        handson2.toggle()
+      });
+
+      $('.legend-handson1').click(function() {
+        keynote.toggle()
+        lecture.toggle()
+        discussion.toggle()
+        problems.toggle()
+        handson2.toggle()
+      });
+
+      $('.legend-handson2').click(function() {
+        keynote.toggle()
+        lecture.toggle()
+        discussion.toggle()
+        problems.toggle()
+        handson1.toggle()
+      });
+    </script>
   </body>
 </html>

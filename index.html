@@ -2661,59 +2661,88 @@
       // I am full of shame about this JavaScript, I did not have time to make
       // it nicer, pull requests welcome
       var keynote = $('.legend-keynote').parent('.row');
-      var lecture = $('.legend-lecture').parent('.row');;
-      var discussion = $('.legend-discussion').parent('.row');;
-      var problems = $('.legend-problems').parent('.row');;
-      var handson1 = $('.legend-handson1').parent('.row');;
-      var handson2 = $('.legend-handson2').parent('.row');;
+      var lecture = $('.legend-lecture').parent('.row');
+      var discussion = $('.legend-discussion').parent('.row');
+      var problems = $('.legend-problems').parent('.row');
+      var handson1 = $('.legend-handson1').parent('.row');
+      var handson2 = $('.legend-handson2').parent('.row');
 
-      $('.legend-keynote').click(function() {
+      var options = {'keynote': toggle_keynote,
+                     'lecture': toggle_lecture,
+                     'discussion': toggle_discussion,
+                     'problems': toggle_problems,
+                     'handson1': toggle_handson1,
+                     'handson2': toggle_handson2
+                    }
+
+      function toggle_keynote() {
         lecture.toggle()
         discussion.toggle()
         problems.toggle()
         handson1.toggle()
-        handson2.toggle()
-      });
+        handson2.toggle()        
+      }
 
-      $('.legend-lecture').click(function() {
+      function toggle_lecture() {
         keynote.toggle()
         discussion.toggle()
         problems.toggle()
         handson1.toggle()
         handson2.toggle()
-      });
+      }
 
-      $('.legend-discussion').click(function() {
+      function toggle_discussion() {
         keynote.toggle()
         lecture.toggle()
         problems.toggle()
         handson1.toggle()
         handson2.toggle()
-      });
+      }
 
-      $('.legend-problems').click(function() {
+      function toggle_problems() {
         keynote.toggle()
         lecture.toggle()
         discussion.toggle()
         handson1.toggle()
         handson2.toggle()
-      });
+      }
 
-      $('.legend-handson1').click(function() {
+      function toggle_handson1() {
         keynote.toggle()
         lecture.toggle()
         discussion.toggle()
         problems.toggle()
         handson2.toggle()
-      });
+      }
 
-      $('.legend-handson2').click(function() {
+      function toggle_handson2() {
         keynote.toggle()
         lecture.toggle()
         discussion.toggle()
         problems.toggle()
         handson1.toggle()
-      });
+      }
+
+      $('.legend-keynote').click(toggle_keynote);
+
+      $('.legend-lecture').click(toggle_lecture);
+
+      $('.legend-discussion').click(toggle_discussion);
+
+      $('.legend-problems').click(toggle_problems);
+
+      $('.legend-handson1').click(toggle_handson1);
+
+      $('.legend-handson2').click(toggle_handson2);
+
+      $(document).ready(function() {
+        var results = new RegExp('[\?&]only=([^&#]*)').exec(window.location.href);
+        var only = results[1] || 0;
+        var func = options[only];
+        if (func) {
+          func();
+        }
+      })
     </script>
   </body>
 </html>

@@ -201,6 +201,10 @@
         }
       }
 
+      .legend-breakroom:hover {
+        background-color: #919191;
+      }
+
       .btn {
         background-color: inherit;
       }
@@ -231,6 +235,10 @@
          .room {
           clear: both;
         }
+      }
+
+      .emoji, .emoji + div {
+        float: left;
       }
 
       h2, h3 {
@@ -394,6 +402,21 @@
       </h2>
 
       <div class="collapse in" id="nov9">
+        <h3>Morning Coffee &amp; Donuts: 8:45am</h3>
+        <div class="schedule-block">
+          <div class="row">
+            <div class="legend legend-breakroom col-xs-2 col-sm-3">
+              <div class="emoji">🍩</div>
+              <div>
+                <span class="hidden-xs">Break Room</span>
+                <div class="room">Great Lakes B</div>
+              </div>
+            </div>
+            <div class="schedule col-xs-10 col-sm-9">
+            </div>
+          </div>
+        </div>
+
         <h3>Opening Keynote: 9:15am &mdash; 10:15am</h3>
         <div class="schedule-block">
           <div class="row">
@@ -675,6 +698,19 @@
         </div>
 
         <h3>Lunch: 12:00pm &mdash; 1:00pm</h3>
+        <div class="schedule-block">
+          <div class="row">
+            <div class="legend legend-breakroom col-xs-2 col-sm-3">
+              <div class="emoji">🥪</div>
+              <div>
+                <span class="hidden-xs">Break Room</span>
+                <div class="room">Great Lakes B</div>
+              </div>
+            </div>
+            <div class="schedule col-xs-10 col-sm-9">
+            </div>
+          </div>
+        </div>
 
         <h3>Block 2: 1:00pm &mdash; 2:00pm</h3>
         <div class="schedule-block">
@@ -715,7 +751,7 @@
             </div>
             <div class="schedule-lecture col-xs-10 col-sm-9">
               <p class="lead">
-                Using Design Thinking – Do we really want a makerspace?
+                Using Design Thinking &mdash; Do we really want a makerspace?
                 <a class="btn btn-default btn-sm" role="button" data-toggle="collapse" href="#nov9-block2-makerspace" aria-expanded="false" aria-controls="nov9-block2-makerspace">
                   <i class="fas fa-angle-double-down"></i>
                   <i class="fas fa-angle-double-up"></i>
@@ -751,7 +787,7 @@
                   1:00 &ndash; 1:20
                 </div>
                 <div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-10 col-md-pull-2">
-                  &nbsp;
+                  To Be Announced
                 </div>
                 <div class="col-xs-12 col-sm-3 col-sm-push-9 col-md-2 col-md-push-10">
                   1:20 &ndash; 1:40
@@ -1122,6 +1158,19 @@
         </div>
 
         <h3>Afternoon Break: 3:10pm &mdash; 3:30pm</h3>
+        <div class="schedule-block">
+          <div class="row">
+            <div class="legend legend-breakroom col-xs-2 col-sm-3">
+              <div class="emoji">☕</div>
+              <div>
+                <span class="hidden-xs">Break Room</span>
+                <div class="room">Great Lakes B</div>
+              </div>
+            </div>
+            <div class="schedule col-xs-10 col-sm-9">
+            </div>
+          </div>
+        </div>
 
         <h3>Block 4: 3:30pm &mdash; 4:30pm</h3>
         <div class="schedule-block">
@@ -1566,6 +1615,21 @@
       </h2>
 
       <div class="collapse in" id="nov10">
+        <h3>Morning Coffee &amp; Bagels: 8:45am</h3>
+        <div class="schedule-block">
+          <div class="row">
+            <div class="legend legend-breakroom col-xs-2 col-sm-3">
+              <div class="emoji">☕</div>
+              <div>
+                <span class="hidden-xs">Break Room</span>
+                <div class="room">Great Lakes B</div>
+              </div>
+            </div>
+            <div class="schedule col-xs-10 col-sm-9">
+            </div>
+          </div>
+        </div>
+
         <h3>Block 1: 9:10am &mdash; 9:50am</h3>
         <div class="schedule-block">
           <div class="row">
@@ -2241,6 +2305,19 @@
         </div>
 
         <h3>Lunch: 12:00pm &mdash; 1:00pm</h3>
+        <div class="schedule-block">
+          <div class="row">
+            <div class="legend legend-breakroom col-xs-2 col-sm-3">
+              <div class="emoji">🥪</div>
+              <div>
+                <span class="hidden-xs">Break Room</span>
+                <div class="room">Great Lakes B</div>
+              </div>
+            </div>
+            <div class="schedule col-xs-10 col-sm-9">
+            </div>
+          </div>
+        </div>
 
         <h3>Block 4: 1:00pm &mdash; 1:40pm</h3>
         <div class="schedule-block">
@@ -2731,13 +2808,15 @@
       var problems = $('.legend-problems').parent('.row');
       var handson1 = $('.legend-handson1').parent('.row');
       var handson2 = $('.legend-handson2').parent('.row');
+      var breakroom = $('.legend-breakroom').parent('.row');
 
       var options = {'keynote': toggle_keynote,
                      'lecture': toggle_lecture,
                      'discussion': toggle_discussion,
                      'problems': toggle_problems,
                      'handson1': toggle_handson1,
-                     'handson2': toggle_handson2
+                     'handson2': toggle_handson2,
+                     'breakroom': toggle_breakroom
                     }
 
       function toggle_keynote() {
@@ -2746,6 +2825,7 @@
         problems.toggle()
         handson1.toggle()
         handson2.toggle()
+        breakroom.toggle()
       }
 
       function toggle_lecture() {
@@ -2754,6 +2834,7 @@
         problems.toggle()
         handson1.toggle()
         handson2.toggle()
+        breakroom.toggle()
       }
 
       function toggle_discussion() {
@@ -2762,6 +2843,7 @@
         problems.toggle()
         handson1.toggle()
         handson2.toggle()
+        breakroom.toggle()
       }
 
       function toggle_problems() {
@@ -2770,6 +2852,7 @@
         discussion.toggle()
         handson1.toggle()
         handson2.toggle()
+        breakroom.toggle()
       }
 
       function toggle_handson1() {
@@ -2778,6 +2861,7 @@
         discussion.toggle()
         problems.toggle()
         handson2.toggle()
+        breakroom.toggle()
       }
 
       function toggle_handson2() {
@@ -2786,6 +2870,16 @@
         discussion.toggle()
         problems.toggle()
         handson1.toggle()
+        breakroom.toggle()
+      }
+
+      function toggle_breakroom() {
+        keynote.toggle()
+        lecture.toggle()
+        discussion.toggle()
+        problems.toggle()
+        handson1.toggle()
+        handson2.toggle()
       }
 
       $('.legend-keynote').click(toggle_keynote);
@@ -2799,6 +2893,8 @@
       $('.legend-handson1').click(toggle_handson1);
 
       $('.legend-handson2').click(toggle_handson2);
+
+      $('.legend-breakroom').click(toggle_breakroom);
 
       $(document).ready(function() {
         var results = new RegExp('[\?&]only=([^&#]*)').exec(window.location.href);
